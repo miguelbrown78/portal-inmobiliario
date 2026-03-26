@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-const estiloSeccion = "relative min-h-screen flex flex-col items-center justify-center text-center px-6";
+const estiloSeccion = "snap-start relative min-h-screen flex flex-col items-center justify-center text-center px-6";
 const estiloFondoContenedor = "absolute inset-0 -z-10";
 const estiloImagenDesktop = "object-cover hidden lg:block";
 const estiloImagenTablet = "object-cover hidden sm:block lg:hidden";
@@ -27,7 +27,7 @@ const estiloLinea = "w-10 h-px bg-[var(--teal-lt)]/60 mt-1";
 const estiloH1 = "bg-[white]/10 px-10 py-4 rounded-xl border-2 border-white/20 font-bold tracking-wide animate-fade-in-up-delay-1 font-serif text-white text-5xl sm:text-6xl lg:text-7xl leading-[1.1] tracking-tight";
 const estiloSubtitulo = "uppercase tracking-wide animate-fade-in-up-delay-2 text-white/75 text-base sm:text-lg max-w-md leading-relaxed";
 const estiloSubtitulo2 = "text-black/80 uppercase tracking-[0.3em] text-xs font-light";
-const estiloSubtitulo3 = "text-white/80 tracking-[0.1em] text-s";
+const estiloSubtitulo3 = "animate-fade-in-up-delay-2 text-white/80 tracking-[0.1em] text-s";
 const estiloCta = "animate-fade-in-up-delay-3 flex flex-row gap-4 mt-2 items-center";
 const estiloBotonPrimario = "text-center border-2 border-white bg-[#2d8fa0] hover:bg-[#237f8f] text-white font-semibold px-10 py-4 rounded-full transition-all duration-200 text-sm tracking-wide uppercase shadow-[0_0_20px_rgba(45,143,160,0.5)] hover:shadow-[0_0_30px_rgba(45,143,160,0.7)]";
 const estiloBotonSecundario = "text-center text-white/70 font-medium px-10 py-4 rounded-full transition-all duration-200 text-sm tracking-wide uppercase";
@@ -81,7 +81,7 @@ export default function Inicio() {
         </div>        
 
         {/* Stats */}
-        <div className="flex items-center gap-0 mt-8">
+        <div className="animate-fade-in-up-delay-1 flex items-center gap-0 mt-8">
           <div className="flex flex-col items-center px-4 sm:px-8">
             <span className="text-white font-serif text-xl sm:text-2xl font-bold">+340</span>
             <span className="text-white/60 uppercase tracking-[0.2em] text-[10px] sm:text-xs mt-1">Propiedades</span>
@@ -111,6 +111,33 @@ export default function Inicio() {
         </div>
 
       </section>
+
+{/* Sección 2 */}
+<section className="snap-start relative min-h-screen flex flex-col items-center justify-center text-center px-6 bg-[#001820] overflow-hidden">
+
+  {/* Ola de fondo */}
+  <div className="absolute inset-0 -z-10">
+    <svg viewBox="0 0 1440 400" preserveAspectRatio="none" width="100%" height="100%" className="absolute bottom-0">
+      <path d="M0,200 C360,280 720,120 1080,200 C1260,240 1380,180 1440,200 L1440,400 L0,400 Z" fill="#00b4c8" />
+    </svg>
+  </div>
+
+  {/* Contenido */}
+  <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center gap-6">
+    <p className="text-[var(--teal-lt)] uppercase tracking-[0.3em] text-xs font-light">
+      La quietud del horizonte
+    </p>
+    <h2 className="font-serif text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.1] tracking-tight">
+      Tu <em>hogar ideal</em> frente a la bahía
+    </h2>
+    <div className="w-10 h-px bg-[var(--teal-lt)]/60" />
+    <p className="text-white/75 text-base sm:text-lg max-w-md leading-relaxed">
+      Encuentra la propiedad que siempre soñaste en la Bahía de Cádiz. Apartamentos con vistas al mar, villas en primera línea y casas con historia en los pueblos más bonitos de la costa gaditana.
+    </p>
+  </div>
+
+</section>
+
     </main>
   );
 }

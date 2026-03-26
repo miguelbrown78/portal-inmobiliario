@@ -48,8 +48,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${dmSerifDisplay.variable} ${dmSans.variable}`}>
-      <body className="font-sans bg-[#001820] overflow-x-hidden">
+    <html lang="es" className={`${dmSerifDisplay.variable} ${dmSans.variable}`}>      
+      <body className="font-sans bg-[#001820] overflow-x-hidden h-screen overflow-y-scroll snap-y snap-mandatory">
         <Navbar />
         {children}
       </body>
