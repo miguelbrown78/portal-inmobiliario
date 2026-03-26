@@ -31,7 +31,7 @@ const estiloSubtitulo3 = "text-white/80 tracking-[0.1em] text-s";
 const estiloCta = "animate-fade-in-up-delay-3 flex flex-row gap-4 mt-2 items-center";
 const estiloBotonPrimario = "text-center border-2 border-white bg-[#2d8fa0] hover:bg-[#237f8f] text-white font-semibold px-10 py-4 rounded-full transition-all duration-200 text-sm tracking-wide uppercase shadow-[0_0_20px_rgba(45,143,160,0.5)] hover:shadow-[0_0_30px_rgba(45,143,160,0.7)]";
 const estiloBotonSecundario = "text-center text-white/70 font-medium px-10 py-4 rounded-full transition-all duration-200 text-sm tracking-wide uppercase";
-const estiloScroll = "absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce-slow";
+const estiloScroll = "absolute bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce-slow";
 const estiloScrollTexto = "text-white/40 text-xs uppercase tracking-widest";
 const estiloScrollSvg = "text-white/40";
 
