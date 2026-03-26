@@ -28,9 +28,9 @@ const estiloH1 = "bg-[white]/10 px-10 py-4 rounded-xl border-2 border-white/20 f
 const estiloSubtitulo = "uppercase tracking-wide animate-fade-in-up-delay-2 text-white/75 text-base sm:text-lg max-w-md leading-relaxed";
 const estiloSubtitulo2 = "text-black/80 uppercase tracking-[0.3em] text-xs font-light";
 const estiloSubtitulo3 = "text-white/80 tracking-[0.1em] text-s";
-const estiloCta = "animate-fade-in-up-delay-3 flex flex-col sm:flex-row gap-4 mt-2";
-const estiloBotonPrimario = "bg-[white] hover:bg-[#ffeeee] font-semibold px-10 py-4 rounded-full transition-all duration-200 text-sm tracking-wide uppercase shadow-[0_0_20px_rgba(45,143,160,0.5)] hover:shadow-[0_0_30px_rgba(45,143,160,0.7)]";
-const estiloBotonSecundario = "border-2 border-white hover:border-[var(--teal-lt)] hover:text-[var(--teal-lt)] text-white font-semibold px-10 py-4 rounded-full transition-all duration-200 text-sm tracking-wide uppercase shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:shadow-[0_0_20px_rgba(123,224,239,0.3)]";
+const estiloCta = "animate-fade-in-up-delay-3 flex flex-row gap-4 mt-2 items-center";
+const estiloBotonPrimario = "text-center border-2 border-white bg-[#2d8fa0] hover:bg-[#237f8f] text-white font-semibold px-10 py-4 rounded-full transition-all duration-200 text-sm tracking-wide uppercase shadow-[0_0_20px_rgba(45,143,160,0.5)] hover:shadow-[0_0_30px_rgba(45,143,160,0.7)]";
+const estiloBotonSecundario = "text-center text-white/70 font-medium px-10 py-4 rounded-full transition-all duration-200 text-sm tracking-wide uppercase";
 const estiloScroll = "absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce-slow";
 const estiloScrollTexto = "text-white/40 text-xs uppercase tracking-widest";
 const estiloScrollSvg = "text-white/40";
@@ -74,31 +74,33 @@ export default function Inicio() {
           {/* CTA */}
           <div className={estiloCta}>
             <Link href="/propiedades" className={estiloBotonPrimario}>
-              Ver propiedades
+              Escoja su futuro hogar
             </Link>
-            <Link href="/contacto" className={estiloBotonSecundario}>
-              Contactar
-            </Link>
+
+          </div>
+        </div>        
+
+        {/* Stats */}
+        <div className="flex items-center gap-0 mt-8">
+          <div className="flex flex-col items-center px-4 sm:px-8">
+            <span className="text-white font-serif text-xl sm:text-2xl font-bold">+340</span>
+            <span className="text-white/60 uppercase tracking-[0.2em] text-[10px] sm:text-xs mt-1">Propiedades</span>
+          </div>
+          <div className="w-px h-8 sm:h-10 bg-white/20" />
+          <div className="flex flex-col items-center px-4 sm:px-8">
+            <span className="text-white font-serif text-xl sm:text-2xl font-bold">12</span>
+            <span className="text-white/60 uppercase tracking-[0.2em] text-[10px] sm:text-xs mt-1">Municipios</span>
+          </div>
+          <div className="w-px h-8 sm:h-10 bg-white/20" />
+          <div className="flex flex-col items-center px-4 sm:px-8">
+            <span className="text-white font-serif text-xl sm:text-2xl font-bold">98%</span>
+            <span className="text-white/60 uppercase tracking-[0.2em] text-[10px] sm:text-xs mt-1">Satisfacción</span>
           </div>
         </div>
 
-        {/* Stats */}
-<div className="flex items-center gap-0 mt-8">
-  <div className="flex flex-col items-center px-4 sm:px-8">
-    <span className="text-white font-serif text-xl sm:text-2xl font-bold">+340</span>
-    <span className="text-white/60 uppercase tracking-[0.2em] text-[10px] sm:text-xs mt-1">Propiedades</span>
-  </div>
-  <div className="w-px h-8 sm:h-10 bg-white/20" />
-  <div className="flex flex-col items-center px-4 sm:px-8">
-    <span className="text-white font-serif text-xl sm:text-2xl font-bold">12</span>
-    <span className="text-white/60 uppercase tracking-[0.2em] text-[10px] sm:text-xs mt-1">Municipios</span>
-  </div>
-  <div className="w-px h-8 sm:h-10 bg-white/20" />
-  <div className="flex flex-col items-center px-4 sm:px-8">
-    <span className="text-white font-serif text-xl sm:text-2xl font-bold">98%</span>
-    <span className="text-white/60 uppercase tracking-[0.2em] text-[10px] sm:text-xs mt-1">Satisfacción</span>
-  </div>
-</div>
+        <Link href="/contacto" className={estiloBotonSecundario}>
+          Contactar
+        </Link>
 
         {/* Scroll indicator */}
         <div className={estiloScroll}>
